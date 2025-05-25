@@ -1,0 +1,2 @@
+L'apprentissage automatique (machine learning) est une méthode d'analyse de données qui automatise la construction de modèles analytiques.
+Il s'agit d'une branche de l'intelligence artificielle basée sur l'idée que les systèmes peuvent apprendre à partir des données, identifier des schémas et prendre des décisions avec un minimum d'intervention humaine.
