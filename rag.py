@@ -28,5 +28,16 @@ response = requests.post(
         "prompt": prompt
     }
 )
-print("\nRéponse augmentée :")
-print(response.json()["response"])
+
+full_response = ""
+for line in response.iter_lines():
+    if line:
+        data = line.decode('utf-8')
+        import json
+        chunk = json.loads(data)
+        full_response += chunk.get("response", "")
+
+print("Réponse augmentée :")
+print(full_response)
+# print("\nRéponse augmentée :")
+# print(response.json()["response"])
